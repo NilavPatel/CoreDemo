@@ -1,5 +1,6 @@
 # Command list for .Net Core
 
+### Create new folder using CMD
 `````
 * mkdir CoreDemo
 * cd CoreDemo
@@ -12,6 +13,8 @@
 * dotnet new webapi -o WebApi
 * dotnet new classlib -o ApplicationCore
 * dotnet new classlib -o Infrastructure
+
+Available project templates like web | webapi | console | classlib | mvc
 `````
 
 ### Add projects to solution file
@@ -22,14 +25,14 @@
 * dotnet sln CoreDemo.sln add Infrastructure/Infrastructure.csproj
 `````
 
-### Add references to projects
+### Add reference of project to another project
 `````
 * dotnet add Infrastructure/Infrastructure.csproj reference ApplicationCore/ApplicationCore.csproj
 * dotnet add WebApi/WebApi.csproj reference ApplicationCore/ApplicationCore.csproj
 * dotnet add WebApi/WebApi.csproj reference Infrastructure/Infrastructure.csproj
 `````
 
-### Restore and build solution
+### Restore / Build / Clean / Run / Publish
 `````
 * dotnet restore
 * dotnet build
