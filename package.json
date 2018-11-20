@@ -1,0 +1,18 @@
+{
+    "name": "dotnet-core-demo-project",
+    "author": {
+        "name": "Nilav Patel"
+    },
+    "version": "1.0.0",
+    "scripts": {
+        "ng-build": "cd web/clientapp && npm run-script build",
+        "ng-start": "cd web/clientapp && npm run-script start",
+
+        "api-build": "dotnet build WebApi/WebApi.csproj --no-restore",
+        "api-start": "dotnet run -p WebApi/WebApi.csproj",
+        "api-restore": "dotnet restore -p WebApi/WebApi.csproj",
+
+        "all-build": "dotnet build --no-restore",
+        "all-restore": "dotnet restore"
+    }
+}

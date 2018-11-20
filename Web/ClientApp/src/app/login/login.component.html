@@ -1,0 +1,31 @@
+<mat-card class="login-card mat-elevation-z8">
+    <form [formGroup]="loginForm" (ngSubmit)="doLogin()">
+        <mat-grid-list cols="1" rows="5" rowHeight="80px">
+            <mat-grid-tile>
+                <h4>Welcome to Angular Demo</h4>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <input matInput placeholder="User  name" [formControl]="usernameFormControl" [errorStateMatcher]="matcher">
+                    <mat-error *ngIf="usernameFormControl.hasError('required')">
+                        User name is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field>
+                    <input matInput placeholder="Passowrd" [formControl]="passwordFormControl" [errorStateMatcher]="matcher">
+                    <mat-error *ngIf="passwordFormControl.hasError('required')">
+                        Password is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button type="submit" mat-raised-button color="primary">Login</button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <i>If not registered, <b>Register</b> here.</i>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form>
+</mat-card>
