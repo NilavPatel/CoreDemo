@@ -53,10 +53,7 @@ Available project templates like web | webapi | console | classlib | mvc
 ### Create context class for Entity framework core
 `````
 * dotnet ef dbcontext scaffold "Server=**[server]**;Database=**[database]**;User Id=**[username]**;Password=**[password]**;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -d -o Data -c "**[contextname]**" --project Infrastructure/Infrastructure.csproj --startup-project WebApi/WebApi.csproj
-`````
 
-### Update context file
-`````
-* dotnet ef database update -c **[contextname]** --project Infrastructure/Infrastructure.csproj --startup-projec WebApi/WebApi.csproj
+use --force to overwrite context file.
 `````
 
