@@ -8,7 +8,7 @@
 
 ### Create solution and projects
 `````
-* dotnet new sln
+* dotnet new sln -n=CoreDemo
 * dotnet new angular -o Web
 * dotnet new webapi -o WebApi
 * dotnet new classlib -o ApplicationCore
