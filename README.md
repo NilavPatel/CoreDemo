@@ -14,7 +14,8 @@
 * dotnet new classlib -o ApplicationCore
 * dotnet new classlib -o Infrastructure
 
-Available project templates like web | webapi | console | classlib | mvc
+Available project templates like web | webapi | console | classlib | mvc | xunit | angular
+Here solution name will be as per folder name.
 `````
 
 ### Add projects to solution file
@@ -40,6 +41,7 @@ Available project templates like web | webapi | console | classlib | mvc
 * dotnet clean
 * dotnet run --project Web/Web.csproj
 * dotnet publish --configuration {debug/release}
+* dotnet test
 `````
 
 ### Add packages for Entity framework core
