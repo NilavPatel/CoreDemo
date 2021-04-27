@@ -24,6 +24,8 @@ Here solution name will be as per folder name.
 * dotnet sln CoreDemo.sln add WebApi/WebApi.csproj
 * dotnet sln CoreDemo.sln add ApplicationCore/ApplicationCore.csproj
 * dotnet sln CoreDemo.sln add Infrastructure/Infrastructure.csproj
+
+* dotnet sln CoreDemo.sln remove Infrastructure/Infrastructure.csproj
 `````
 
 ### Add reference of project to another project
@@ -31,6 +33,8 @@ Here solution name will be as per folder name.
 * dotnet add Infrastructure/Infrastructure.csproj reference ApplicationCore/ApplicationCore.csproj
 * dotnet add WebApi/WebApi.csproj reference ApplicationCore/ApplicationCore.csproj
 * dotnet add WebApi/WebApi.csproj reference Infrastructure/Infrastructure.csproj
+
+* dotnet remove WebApi/WebApi.csproj reference Infrastructure/Infrastructure.csproj
 `````
 
 ### Restore / Build / Clean / Run / Publish
@@ -46,9 +50,9 @@ Here solution name will be as per folder name.
 
 ### Add packages for Entity framework core
 `````
-* dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-* dotnet add package Microsoft.EntityFrameworkCore.Tools 
-* dotnet add package Microsoft.EntityFrameworkCore.SqlServer.Design
+* dotnet add Infrastructure/Infrastructure.csproj package Microsoft.EntityFrameworkCore.SqlServer
+* dotnet add Infrastructure/Infrastructure.csproj package Microsoft.EntityFrameworkCore.Tools 
+* dotnet add Infrastructure/Infrastructure.csproj package Microsoft.EntityFrameworkCore.SqlServer.Design
 * dotnet restore
 `````
 
