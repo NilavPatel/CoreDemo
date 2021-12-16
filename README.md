@@ -44,6 +44,7 @@ Here solution name will be as per folder name.
 * dotnet build --no-restore
 * dotnet clean
 * dotnet run --project Web/Web.csproj
+* dotnet run --environment "Staging"
 * dotnet publish --configuration {debug/release}
 * dotnet test
 `````
